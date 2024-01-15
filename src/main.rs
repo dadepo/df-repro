@@ -69,7 +69,7 @@ async fn main() -> Result<()> {
 
     let df = ctx
         .sql(
-            r#"SELECT random_normal() AS random_normal FROM data_table"#,
+            r#"SELECT random_normal() AS random_normal, random() AS native_random FROM data_table"#,
         )
         .await?;
 
