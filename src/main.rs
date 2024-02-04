@@ -80,7 +80,7 @@ async fn main() -> Result<()> {
 
     let ctx = set_up_data_test()?;
 
-    // Failes with Error: SQL(ParserError("Expected (, found: EOF"), None)
+    // Fails with Error: SQL(ParserError("Expected (, found: EOF"), None)
     let df = ctx
         .sql(
             r#"SELECT * FROM json_table"#,
